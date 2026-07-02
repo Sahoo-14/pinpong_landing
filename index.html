@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PinPon Dude — Play Table Tennis. Win Real Money.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">PinPon <span>Dude</span></div>
+  <a href="#waitlist" class="nav-cta">Join Waitlist</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">🏓 Coming Soon — Skill-Based Betting</div>
+  <h1>Play Table Tennis.<br><em>Win Real Money.</em></h1>
+  <p class="hero-sub">The world's first real-money ping pong game. No luck. Pure skill. Ultra-low fees. Compete 1v1 and take home your opponent's stake.</p>
+
+  <!-- 3D Ping Pong Game Preview -->
+  <div class="game-preview">
+    <canvas id="pong-canvas"></canvas>
+    <div class="game-overlay">
+      <span class="player-tag" id="tag-left">You • ₹5</span>
+      <span class="player-tag" id="tag-right">Player423 • ₹5</span>
+      <div class="score-display" id="score">3 — 2</div>
+      <div class="wager-tag">💰 ₹10 pot • Winner takes ₹9.50</div>
+    </div>
+  </div>
+
+  <!-- WAITLIST FORM -->
+  <div class="waitlist-section" id="waitlist">
+    <div class="waitlist-form" id="wl-form">
+      <input type="email" id="email-input" placeholder="your@email.com" />
+      <button onclick="joinWaitlist()">Join Waitlist →</button>
+    </div>
+    <p class="waitlist-count" id="wl-count"><strong>247 people</strong> already on the waitlist</p>
+    <div id="success-msg">🎉 You're on the list! We'll notify you at launch.</div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-item">
+    <span class="stat-val"> ~ 5%</span>
+    <span class="stat-label">Platform Fee</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-val">₹10 – ₹100</span>
+    <span class="stat-label">Wager Range</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-val">&lt;1 sec</span>
+    <span class="stat-label">Payout Speed</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-val">100%</span>
+    <span class="stat-label">Skill-Based</span>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<div class="section">
+  <p class="section-label">How It Works</p>
+  <h2 class="section-title">Simple. Fair. Instant.</h2>
+  <p class="section-sub">No casinos. No random number generators. Just you, your opponent, and your ping pong skills.</p>
+  <div class="divider"></div>
+  <div class="steps">
+    <div class="step-card">
+      <div class="step-num">01</div>
+      <h3>Connect Your Wallet</h3>
+      <p>Sign up and add funds via UPI, card. Your money is secured in a smart escrow — we never hold it.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">02</div>
+      <h3>Pick Your Stake</h3>
+      <p>Choose a table — ₹10, ₹50, ₹100 or custom stakes. You're matched with a player at the same level.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">03</div>
+      <h3>Play Live 1v1</h3>
+      <p>Real-time table tennis in your browser. Control your paddle, smash shots, outsmart your opponent.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">04</div>
+      <h3>Win & Withdraw</h3>
+      <p>Winner gets majority of the pot instantly. Withdraw to your account in seconds. No delays, no drama.</p>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<div class="section" style="padding-top: 0;">
+  <p class="section-label">Why PinPon Dude</p>
+  <h2 class="section-title">Built Different</h2>
+  <p class="section-sub">We're not a casino. We're a competitive gaming platform where skill wins every time.</p>
+  <div class="divider"></div>
+  <div class="features-grid">
+    <div class="feature-card">
+      <span class="feature-icon">⚡</span>
+      <div class="highlight-tag">Lowest Fees</div>
+      <h4>Only ~5% Commission</h4>
+      <p>Most gambling platforms take 10–20%. We charge less so you keep more of your winnings.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">🏓</span>
+      <h4>Skill, Not Luck</h4>
+      <p>Every outcome depends on your reflexes and tactics — not an RNG or house edge working against you.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">🔒</span>
+      <h4>Secure Escrow</h4>
+      <p>Bets are locked in a smart contract. The platform can't touch your money — only the winner can.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">📱</span>
+      <h4>Play Anywhere</h4>
+      <p>Browser-based, no app download. Works on desktop and mobile. Jump into a match in under 30 seconds.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">🏆</span>
+      <h4>Ranked Leagues</h4>
+      <p>Climb the leaderboard, unlock higher-stakes tables, and compete in weekend tournaments for prize pools.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">💸</span>
+      <h4>Instant Payouts</h4>
+      <p>Win at 11:57 PM, withdraw at 11:58 PM. No waiting, no manual review, no excuses.</p>
+    </div>
+  </div>
+</div>
+
+<!-- OPINION SECTION -->
+<div class="opinion-section">
+  <div class="opinion-inner">
+    <p class="section-label">Your Opinion Matters</p>
+    <h4 class="section-title">Help Us Build This Right</h4>
+    <p style="margin-top: 0.8rem; font-size: 0.88rem; font-weight: 500; color: var(--muted);">We're at day zero. Tell us what you'd love to see — or what would stop you from using this. Your feedback directly shapes what we build.</p>
+
+    <p style="margin-top: 2rem; font-size: 0.88rem; font-weight: 500; color: var(--muted);">What would make you use PinPon Dude? (pick all that apply)</p>
+    <div class="opinion-options">
+      <button class="opinion-btn" onclick="toggle(this)"><span class="opinion-emoji">📱</span> Mobile-first design</button>
+      <button class="opinion-btn" onclick="toggle(this)"><span class="opinion-emoji">🌙</span> Practice mode (free)</button>
+      <button class="opinion-btn" onclick="toggle(this)"><span class="opinion-emoji">👥</span> Friend matches</button>
+      <button class="opinion-btn" onclick="toggle(this)"><span class="opinion-emoji">🏆</span> Weekly tournaments</button>
+      <button class="opinion-btn" onclick="toggle(this)"><span class="opinion-emoji">💳</span> UPI / easy deposits</button>
+      <button class="opinion-btn" onclick="toggle(this)"><span class="opinion-emoji">🤖</span> Play vs AI bots</button>
+      <button class="opinion-btn" onclick="toggle(this)"><span class="opinion-emoji">🔁</span> Rematch system</button>
+      <button class="opinion-btn" onclick="toggle(this)"><span class="opinion-emoji">📊</span> Stats & replays</button>
+    </div>
+
+    <p style="font-size: 0.88rem; font-weight: 500; color: var(--muted); margin-top: 1.5rem;">Anything else on your mind? Drop it here:</p>
+    <textarea class="opinion-textarea" id="opinion-text" placeholder="e.g. 'I'd use this if you had a practice mode first' or 'The ping/lag needs to be flawless'..."></textarea>
+
+    <div style="margin-top: 1rem; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+      <button class="submit-opinion" onclick="submitOpinion()">Send Feedback →</button>
+      <p style="font-size: 0.8rem; color: var(--muted);">Anonymous. No spam. Honest appreciated.</p>
+    </div>
+    <p id="opinion-thanks">🙌 Thanks! This genuinely helps us build better.</p>
+  </div>
+</div>
+
+<!-- SECOND WAITLIST CTA -->
+<div style="padding: 5rem 2rem; text-align: center;">
+  <p class="section-label">Early Access</p>
+  <h2 class="section-title">Be First to Play</h2>
+  <p style="color: var(--muted); max-width: 440px; margin: 1rem auto 2rem; font-size: 1rem; line-height: 1.7;">Waitlist members get early access, lower fees for life, and direct input on features before public launch.</p>
+  <div class="waitlist-form" style="margin: 0 auto;">
+    <input type="email" id="email-input-2" placeholder="your@email.com" />
+    <button onclick="joinWaitlist2()">Get Early Access →</button>
+  </div>
+  <p class="waitlist-count" style="margin-top: 0.8rem;"><strong>247 people</strong> already signed up</p>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">PinPon Dude</div>
+  <p>
+    A skill-based table tennis wagering platform.<br>
+    Currently in development. <a href="#">Contact founder</a> · <a href="#">Privacy</a><br>
+    <span style="font-size: 0.75rem; display: block; margin-top: 0.6rem;">⚠️ Real-money gaming. Must be 18+. Please play responsibly. Not available in all jurisdictions.</span>
+  </p>
+</footer>
+
+<!-- TOAST -->
+<div class="toast" id="toast">✅ You're on the list!</div>
+
+
+</body>
+</html>
