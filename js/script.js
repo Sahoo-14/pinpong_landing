@@ -254,3 +254,48 @@
 
     (function loop() { update(); draw(); requestAnimationFrame(loop); })();
   })();
+
+  // Waitlist
+  function joinWaitlist() {
+    const email = document.getElementById('email-input').value.trim();
+    if (!email || !email.includes('@')) {
+      document.getElementById('email-input').focus();
+      return;
+    }
+    document.getElementById('wl-form').style.display = 'none';
+    document.getElementById('success-msg').style.display = 'block';
+    document.getElementById('wl-count').textContent = '🎉 248 people on the waitlist — you just joined!';
+    showToast();
+  }
+
+  function joinWaitlist2() {
+    const email = document.getElementById('email-input-2').value.trim();
+    if (!email || !email.includes('@')) return;
+    showToast();
+  }
+
+  function showToast() {
+    const t = document.getElementById('toast');
+    t.style.display = 'block';
+    setTimeout(() => t.style.display = 'none', 3500);
+  }
+
+  // Opinion toggles
+  function toggle(btn) {
+    btn.classList.toggle('selected');
+  }
+
+  function submitOpinion() {
+    document.querySelector('.opinion-options').style.opacity = '0.4';
+    document.querySelector('.opinion-textarea').style.opacity = '0.4';
+    document.querySelector('.submit-opinion').style.display = 'none';
+    document.getElementById('opinion-thanks').style.display = 'block';
+  }
+
+  // Smooth scroll for nav CTA
+  document.querySelectorAll('a[href="#waitlist"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      document.getElementById('waitlist').scrollIntoView({ behavior: 'smooth' });
+    });
+  });
